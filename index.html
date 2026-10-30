@@ -9,12 +9,11 @@
 </head>
 <body>
 <div class="wrap">
-<nav class="languages" aria-label="Language"><a href="#en">English</a><a href="#zh-Hans">简体中文</a><a href="#zh-Hant">繁體中文</a></nav>
-
-<section class="locale" data-lang="en">
+<nav class="languages" aria-label="Language"><a href="#en">English</a><a href="#zh-Hans">简体中文</a><a href="#zh-Hant">繁體中文</a><a href="#ja">日本語</a><a href="#ko">한국어</a><a href="#fr">Français</a><a href="#de">Deutsch</a><a href="#es">Español</a><a href="#ru">Русский</a><a href="#it">Italiano</a></nav>
+<section class="locale" data-lang="en" lang="en">
 <div class="brand"><img src="icon.png" alt=""><h1>WebP Batch Converter</h1></div>
 <p class="meta">Support</p>
-<p class="lede"><strong>Build a recipe once, convert a whole folder.</strong> Stack steps — resize, target-size compression, watermark, rename, filter — then convert PNG and JPEG images to WebP, PNG, or JPEG in one run. Everything happens locally on your Mac.</p>
+<p class="lede"><strong>Build a recipe once, convert a whole folder.</strong> Stack steps — Filter, Resize, Compress to Size, Watermark, Rename — then convert PNG and JPEG images to WebP, PNG, or JPEG in one run. Everything happens locally on your Mac.</p>
 <h2>Getting started</h2>
 <ol>
 <li>Drag images or a folder into the window. The table shows every file before and after.</li>
@@ -24,18 +23,20 @@
 <h2>Questions</h2>
 <div class="detail"><h3>Where are the converted files saved?</h3><p>Next to the originals by default. In the “Output” step you can choose a subfolder next to the originals or any folder you pick, and what to do when a file with the same name already exists.</p></div>
 <div class="detail"><h3>Why does the app ask me to authorize a folder?</h3><p>macOS sandboxing lets an app write only where you allow it. When you add single images rather than a folder, the app asks once for permission to save into the folder that contains them. You can also save to a folder you choose instead.</p></div>
-<div class="detail"><h3>How does “compress to target size” work?</h3><p>Small files keep their size, narrow images try a higher quality first, and everything else steps down through a list of widths until the file — watermark included — fits under your size limit.</p></div>
-<div class="detail"><h3>How do I move a watermark?</h3><p>Pick one of the nine positions in the Watermark step, or drag the watermark directly in the preview. Its distance to the edges is kept proportional, so it lands in the same place on images of any size.</p></div>
-<div class="detail"><h3>Purchases</h3><p>Purchases are handled by Apple. If you reinstall the app or use another Mac with the same Apple Account, use “Restore Purchases” in the app.</p></div>
+<div class="detail"><h3>How does “Compress to Size” work?</h3><p>Small files keep their size, narrow images try a higher quality first, and everything else steps down through a list of widths until the file — watermark included — fits under your size limit.</p></div>
+<div class="detail"><h3>How do I move a watermark?</h3><p>Pick one of the nine positions in the “Watermark” step, or drag the watermark directly in the preview. Its distance to the edges is kept proportional, so it lands in the same place on images of any size.</p></div>
+<div class="detail"><h3>What happens with “Delete originals after success”?</h3><p>After a file converts successfully, its original is moved to the Trash, not erased, so you can still put it back.</p></div>
+<div class="detail"><h3>How do I change the app’s language?</h3><p>The app follows your Mac’s language. To use a different one for this app only, choose Settings… (⌘,) › Language, then restart the app.</p></div>
+<div class="detail"><h3>Trial and purchase</h3><p>Every feature is free to try for 7 days. After that, adding images, editing steps, and previewing keep working; “Run” needs the one-time “Permanent Unlock” purchase. Purchases are handled by Apple. On a new Mac or after reinstalling, choose “Restore Purchases” in Trial &amp; Purchase… or in Settings.</p></div>
 <h2>Contact</h2>
 <p>Email <a href="mailto:827868421@qq.com">827868421@qq.com</a>. Please include your macOS version and, if possible, a sample image.</p>
 <p class="page-link"><a href="privacy.html#en">Privacy Policy</a></p>
 </section>
 
-<section class="locale" data-lang="zh-Hans">
+<section class="locale" data-lang="zh-Hans" lang="zh-Hans">
 <div class="brand"><img src="icon.png" alt=""><h1>WebP Batch Converter</h1></div>
 <p class="meta">技术支持</p>
-<p class="lede"><strong>配好一次步骤，整个文件夹一键处理。</strong>把调整尺寸、压缩到目标体积、水印、重命名、筛选等步骤串成流水线，一次把 PNG、JPEG 转成 WebP、PNG 或 JPEG。全部在你的 Mac 本地完成。</p>
+<p class="lede"><strong>配好一次步骤，整个文件夹一键处理。</strong> 把「筛选文件」「调整尺寸」「阶梯压缩」「添加水印」「重命名」等步骤串成流水线，一次把 PNG、JPEG 转成 WebP、PNG 或 JPEG。全部在你的 Mac 本地完成。</p>
 <h2>快速上手</h2>
 <ol>
 <li>把图片或文件夹拖进窗口，表格会列出每个文件处理前后的样子。</li>
@@ -45,35 +46,199 @@
 <h2>常见问题</h2>
 <div class="detail"><h3>转换后的文件保存在哪里？</h3><p>默认保存在原图旁边。在「输出」步骤里可以改为原图旁的子文件夹或任意指定文件夹，也可以设置遇到同名文件时的处理方式。</p></div>
 <div class="detail"><h3>为什么要授权文件夹？</h3><p>macOS 沙盒只允许 App 写入你授权的位置。如果你添加的是单张图片而不是文件夹，App 会请求一次原图所在文件夹的写入权限；你也可以改为保存到自己选择的文件夹。</p></div>
-<div class="detail"><h3>「压缩到目标体积」是怎么工作的？</h3><p>小文件保持原尺寸；较窄的图片先尝试更高画质；其余图片按宽度阶梯逐档缩小，直到加完水印后的最终文件小于你设定的体积上限。</p></div>
-<div class="detail"><h3>怎么调整水印位置？</h3><p>在水印步骤里选择九宫格中的一个位置，或直接在预览图上拖动水印。到边缘的距离按比例保持，不同尺寸的图片上位置一致。</p></div>
-<div class="detail"><h3>购买</h3><p>购买由 Apple 处理。重新安装 App 或在使用同一 Apple 账户的其他 Mac 上，可在 App 内点「恢复购买」。</p></div>
+<div class="detail"><h3>「阶梯压缩」是怎么工作的？</h3><p>小文件保持原尺寸；较窄的图片先尝试更高画质；其余图片按宽度阶梯逐档缩小，直到加完水印后的最终文件小于你设定的体积上限。</p></div>
+<div class="detail"><h3>怎么调整水印位置？</h3><p>在「添加水印」步骤里选择九宫格中的一个位置，或直接在预览图上拖动水印。到边缘的距离按比例保持，不同尺寸的图片上位置一致。</p></div>
+<div class="detail"><h3>勾选「成功后删除原图」会怎样？</h3><p>文件转换成功后，原图会被移到废纸篓，而不是直接抹掉，需要时还可以放回原处。</p></div>
+<div class="detail"><h3>怎么切换 App 的语言？</h3><p>App 默认跟随 Mac 的系统语言。如果只想让这个 App 换成别的语言，请在「设置…」（⌘,）›「语言」中选择，然后重新启动 App。</p></div>
+<div class="detail"><h3>试用与购买</h3><p>所有功能可免费试用 7 天。试用结束后，添加图片、编辑步骤和预览仍可使用；「运行」批量导出需要一次性购买「永久解锁」。购买由 Apple 处理。换新 Mac 或重新安装后，可在「试用与购买…」或「设置」里点「恢复购买」。</p></div>
 <h2>联系我们</h2>
 <p>请发送邮件至 <a href="mailto:827868421@qq.com">827868421@qq.com</a>，并尽量附上 macOS 版本和示例图片。</p>
 <p class="page-link"><a href="privacy.html#zh-Hans">隐私政策</a></p>
 </section>
 
-<section class="locale" data-lang="zh-Hant">
+<section class="locale" data-lang="zh-Hant" lang="zh-Hant">
 <div class="brand"><img src="icon.png" alt=""><h1>WebP Batch Converter</h1></div>
 <p class="meta">技術支援</p>
-<p class="lede"><strong>設定一次步驟，整個資料夾一鍵處理。</strong>把調整尺寸、壓縮到目標大小、浮水印、重新命名、篩選等步驟串成流程，一次把 PNG、JPEG 轉成 WebP、PNG 或 JPEG。全部在你的 Mac 本機完成。</p>
+<p class="lede"><strong>設定一次步驟，整個資料夾一鍵處理。</strong> 把「篩選檔案」「調整尺寸」「階梯壓縮」「加入浮水印」「重新命名」等步驟串成流程，一次把 PNG、JPEG 轉成 WebP、PNG 或 JPEG。全部在你的 Mac 本機完成。</p>
 <h2>快速上手</h2>
 <ol>
 <li>把圖片或資料夾拖進視窗，表格會列出每個檔案處理前後的樣子。</li>
-<li>點左下角「新增步驟」建立配方。步驟由上而下執行，拖動標題可調整順序。</li>
+<li>點左下角「加入步驟」建立配方。步驟由上而下執行，拖動標題可調整順序。</li>
 <li>確認預覽後，點「執行」（⌘R）。</li>
 </ol>
 <h2>常見問題</h2>
 <div class="detail"><h3>轉換後的檔案儲存在哪裡？</h3><p>預設儲存在原圖旁邊。在「輸出」步驟中可改為原圖旁的子資料夾或任何指定資料夾，也可以設定遇到同名檔案時的處理方式。</p></div>
 <div class="detail"><h3>為什麼要授權資料夾？</h3><p>macOS 沙盒只允許 App 寫入你授權的位置。如果你加入的是單張圖片而不是資料夾，App 會請求一次原圖所在資料夾的寫入權限；你也可以改為儲存到自己選擇的資料夾。</p></div>
-<div class="detail"><h3>「壓縮到目標大小」如何運作？</h3><p>小檔案保持原尺寸；較窄的圖片先嘗試較高畫質；其餘圖片依寬度階梯逐檔縮小，直到加上浮水印後的最終檔案小於你設定的上限。</p></div>
-<div class="detail"><h3>如何調整浮水印位置？</h3><p>在浮水印步驟中選擇九宮格的一個位置，或直接在預覽圖上拖動浮水印。到邊緣的距離會按比例保持，不同尺寸的圖片上位置一致。</p></div>
-<div class="detail"><h3>購買</h3><p>購買由 Apple 處理。重新安裝 App 或在使用同一 Apple 帳號的其他 Mac 上，可在 App 內點「回復購買」。</p></div>
+<div class="detail"><h3>「階梯壓縮」如何運作？</h3><p>小檔案保持原尺寸；較窄的圖片先嘗試較高畫質；其餘圖片依寬度階梯逐檔縮小，直到加上浮水印後的最終檔案小於你設定的上限。</p></div>
+<div class="detail"><h3>如何調整浮水印位置？</h3><p>在「加入浮水印」步驟中選擇九宮格的一個位置，或直接在預覽圖上拖動浮水印。到邊緣的距離會按比例保持，不同尺寸的圖片上位置一致。</p></div>
+<div class="detail"><h3>勾選「成功後刪除原圖」會怎樣？</h3><p>檔案轉換成功後，原圖會移到垃圾桶，而不是直接抹除，需要時還能放回原處。</p></div>
+<div class="detail"><h3>如何切換 App 的語言？</h3><p>App 預設跟隨 Mac 的系統語言。若只想讓這個 App 改用其他語言，請在「設定⋯」（⌘,）›「語言」中選擇，然後重新啟動 App。</p></div>
+<div class="detail"><h3>試用與購買</h3><p>所有功能可免費試用 7 天。試用結束後，加入圖片、編輯步驟和預覽仍可使用；「執行」批次匯出需要一次性購買「永久解鎖」。購買由 Apple 處理。換新 Mac 或重新安裝後，可在「試用與購買⋯」或「設定」中點「恢復購買」。</p></div>
 <h2>聯絡我們</h2>
 <p>請寄信至 <a href="mailto:827868421@qq.com">827868421@qq.com</a>，並盡量附上 macOS 版本與範例圖片。</p>
 <p class="page-link"><a href="privacy.html#zh-Hant">隱私權政策</a></p>
 </section>
 
+<section class="locale" data-lang="ja" lang="ja">
+<div class="brand"><img src="icon.png" alt=""><h1>WebP Batch Converter</h1></div>
+<p class="meta">サポート</p>
+<p class="lede"><strong>一度レシピを作れば、フォルダ全体を一括変換。</strong> 「絞り込み」「サイズ変更」「段階圧縮」「透かし」「名前変更」などのステップを組み合わせ、PNG と JPEG を WebP・PNG・JPEG に一度で変換します。処理はすべてお使いの Mac 上で行われます。</p>
+<h2>はじめに</h2>
+<ol>
+<li>画像やフォルダをウインドウにドラッグします。表に各ファイルの処理前後が表示されます。</li>
+<li>左下の「ステップを追加」でレシピを組み立てます。ステップは上から順に実行され、タイトルをドラッグして並べ替えられます。</li>
+<li>プレビューを確認して「実行」（⌘R）をクリックします。</li>
+</ol>
+<h2>よくある質問</h2>
+<div class="detail"><h3>変換したファイルはどこに保存されますか？</h3><p>初期設定では元の画像と同じ場所です。「出力」ステップで、元の画像の横のサブフォルダや任意のフォルダを選べます。同じ名前のファイルがある場合の扱いも設定できます。</p></div>
+<div class="detail"><h3>フォルダへのアクセス許可を求められるのはなぜですか？</h3><p>macOS のサンドボックスでは、App は許可された場所にしか書き込めません。フォルダではなく画像を個別に追加した場合、その画像があるフォルダへの保存許可を一度だけ求めます。任意のフォルダに保存するよう設定することもできます。</p></div>
+<div class="detail"><h3>「段階圧縮」はどのように動作しますか？</h3><p>小さいファイルはそのままのサイズ、幅の狭い画像はまず高画質を試し、それ以外は透かしを含めた最終ファイルが上限サイズに収まるまで、幅を段階的に小さくします。</p></div>
+<div class="detail"><h3>透かしの位置を変えるには？</h3><p>「透かし」ステップで 9 つの位置から選ぶか、プレビュー上で透かしを直接ドラッグします。端からの距離は比率で保たれるので、どのサイズの画像でも同じ位置に入ります。</p></div>
+<div class="detail"><h3>「成功したら元画像を削除」をオンにするとどうなりますか？</h3><p>変換に成功したファイルの元画像は完全に消されるのではなくゴミ箱に移動するので、必要なら元に戻せます。</p></div>
+<div class="detail"><h3>App の言語を変えるには？</h3><p>App は Mac の言語設定に従います。この App だけ別の言語にしたい場合は、「設定…」（⌘,）›「言語」で選び、App を再起動してください。</p></div>
+<div class="detail"><h3>試用と購入</h3><p>すべての機能を 7 日間無料でお試しいただけます。試用終了後も画像の追加、ステップの編集、プレビューは使えます。「実行」には 1 回限りの購入「永久ライセンス」が必要です。購入は Apple が処理します。新しい Mac や再インストール後は、「試用と購入…」または設定で「購入を復元」を選んでください。</p></div>
+<h2>お問い合わせ</h2>
+<p><a href="mailto:827868421@qq.com">827868421@qq.com</a> までメールでお寄せください。macOS のバージョンと、可能であればサンプル画像を添えていただけると助かります。</p>
+<p class="page-link"><a href="privacy.html#ja">プライバシーポリシー</a></p>
+</section>
+
+<section class="locale" data-lang="ko" lang="ko">
+<div class="brand"><img src="icon.png" alt=""><h1>WebP Batch Converter</h1></div>
+<p class="meta">지원</p>
+<p class="lede"><strong>레시피를 한 번 만들면 폴더 전체를 한 번에 변환합니다.</strong> ‘필터’, ‘크기 조정’, ‘단계별 압축’, ‘워터마크’, ‘이름 변경’ 같은 단계를 쌓아 PNG와 JPEG 이미지를 WebP, PNG, JPEG로 한 번에 변환하세요. 모든 처리는 Mac에서 이루어집니다.</p>
+<h2>시작하기</h2>
+<ol>
+<li>이미지나 폴더를 창으로 드래그하세요. 표에 각 파일의 처리 전후가 표시됩니다.</li>
+<li>왼쪽 아래 ‘단계 추가’를 눌러 레시피를 만드세요. 단계는 위에서 아래로 실행되며, 제목을 드래그해 순서를 바꿀 수 있습니다.</li>
+<li>미리보기를 확인한 뒤 ‘실행’(⌘R)을 클릭하세요.</li>
+</ol>
+<h2>자주 묻는 질문</h2>
+<div class="detail"><h3>변환된 파일은 어디에 저장되나요?</h3><p>기본적으로 원본 옆에 저장됩니다. ‘출력’ 단계에서 원본 옆의 하위 폴더나 원하는 폴더를 고를 수 있고, 같은 이름의 파일이 있을 때의 처리 방식도 정할 수 있습니다.</p></div>
+<div class="detail"><h3>폴더 접근 권한을 묻는 이유는 무엇인가요?</h3><p>macOS 샌드박스에서는 앱이 허용된 위치에만 쓸 수 있습니다. 폴더가 아니라 이미지를 하나씩 추가하면, 그 이미지가 있는 폴더에 저장할 권한을 한 번만 요청합니다. 원하는 폴더에 저장하도록 바꿀 수도 있습니다.</p></div>
+<div class="detail"><h3>‘단계별 압축’은 어떻게 작동하나요?</h3><p>작은 파일은 크기를 유지하고, 폭이 좁은 이미지는 먼저 높은 품질을 시도하며, 나머지는 워터마크를 포함한 최종 파일이 용량 한도 안에 들어올 때까지 너비를 단계적으로 줄입니다.</p></div>
+<div class="detail"><h3>워터마크 위치는 어떻게 바꾸나요?</h3><p>‘워터마크’ 단계에서 9개 위치 중 하나를 고르거나 미리보기에서 워터마크를 직접 드래그하세요. 가장자리와의 거리가 비율로 유지되어 어떤 크기의 이미지에서도 같은 위치에 놓입니다.</p></div>
+<div class="detail"><h3>‘성공 후 원본 삭제’를 켜면 어떻게 되나요?</h3><p>변환에 성공한 파일의 원본은 완전히 지워지지 않고 휴지통으로 이동하므로 필요하면 되살릴 수 있습니다.</p></div>
+<div class="detail"><h3>앱 언어는 어떻게 바꾸나요?</h3><p>앱은 Mac의 언어를 따릅니다. 이 앱만 다른 언어로 쓰려면 ‘설정…’(⌘,) › ‘언어’에서 고른 뒤 앱을 다시 시작하세요.</p></div>
+<div class="detail"><h3>체험과 구매</h3><p>모든 기능을 7일간 무료로 사용해 볼 수 있습니다. 체험이 끝나도 이미지 추가, 단계 편집, 미리보기는 계속 쓸 수 있으며, ‘실행’에는 한 번만 구매하는 ‘영구 잠금 해제’가 필요합니다. 구매는 Apple이 처리합니다. 새 Mac이나 재설치 후에는 ‘체험 및 구매…’ 또는 설정에서 ‘구매 복원’을 선택하세요.</p></div>
+<h2>문의</h2>
+<p><a href="mailto:827868421@qq.com">827868421@qq.com</a>로 이메일을 보내 주세요. macOS 버전과 가능하다면 예시 이미지를 함께 보내 주시면 좋습니다.</p>
+<p class="page-link"><a href="privacy.html#ko">개인정보 처리방침</a></p>
+</section>
+
+<section class="locale" data-lang="fr" lang="fr">
+<div class="brand"><img src="icon.png" alt=""><h1>WebP Batch Converter</h1></div>
+<p class="meta">Assistance</p>
+<p class="lede"><strong>Créez une recette une fois, convertissez tout un dossier.</strong> Enchaînez des étapes — Filtrer, Redimensionner, Compression par paliers, Filigrane, Renommer — puis convertissez vos images PNG et JPEG en WebP, PNG ou JPEG en une seule fois. Tout se passe sur votre Mac.</p>
+<h2>Pour commencer</h2>
+<ol>
+<li>Glissez des images ou un dossier dans la fenêtre. Le tableau affiche chaque fichier avant et après.</li>
+<li>Cliquez sur « Ajouter une étape » en bas à gauche pour composer votre recette. Les étapes s’exécutent de haut en bas ; faites glisser un titre pour les réordonner.</li>
+<li>Vérifiez l’aperçu, puis cliquez sur « Exécuter » (⌘R).</li>
+</ol>
+<h2>Questions fréquentes</h2>
+<div class="detail"><h3>Où sont enregistrés les fichiers convertis ?</h3><p>Par défaut, à côté des originaux. Dans l’étape « Sortie », vous pouvez choisir un sous-dossier à côté des originaux ou n’importe quel dossier, et ce qu’il faut faire si un fichier du même nom existe déjà.</p></div>
+<div class="detail"><h3>Pourquoi l’app demande-t-elle d’autoriser un dossier ?</h3><p>Le bac à sable de macOS ne permet à une app d’écrire que là où vous l’autorisez. Si vous ajoutez des images isolées plutôt qu’un dossier, l’app demande une seule fois l’accès au dossier qui les contient. Vous pouvez aussi enregistrer dans un dossier de votre choix.</p></div>
+<div class="detail"><h3>Comment fonctionne la « Compression par paliers » ?</h3><p>Les petits fichiers gardent leur taille, les images étroites essaient d’abord une qualité plus élevée, et les autres descendent une liste de largeurs jusqu’à ce que le fichier final — filigrane compris — tienne sous votre limite.</p></div>
+<div class="detail"><h3>Comment déplacer un filigrane ?</h3><p>Choisissez l’une des neuf positions dans l’étape « Filigrane », ou faites glisser le filigrane directement dans l’aperçu. Sa distance aux bords reste proportionnelle : il tombe au même endroit quelle que soit la taille de l’image.</p></div>
+<div class="detail"><h3>Que fait « Supprimer les originaux après réussite » ?</h3><p>Une fois un fichier converti avec succès, son original est placé dans la corbeille, pas effacé : vous pouvez toujours le récupérer.</p></div>
+<div class="detail"><h3>Comment changer la langue de l’app ?</h3><p>L’app suit la langue de votre Mac. Pour utiliser une autre langue dans cette app seulement, choisissez Réglages… (⌘,) › Langue, puis redémarrez l’app.</p></div>
+<div class="detail"><h3>Essai et achat</h3><p>Toutes les fonctions sont gratuites pendant 7 jours. Ensuite, l’ajout d’images, la modification des étapes et l’aperçu restent disponibles ; « Exécuter » nécessite l’achat unique « Déverrouillage permanent ». Les achats sont gérés par Apple. Sur un nouveau Mac ou après une réinstallation, choisissez « Restaurer les achats » dans Essai et achat… ou dans les Réglages.</p></div>
+<h2>Contact</h2>
+<p>Écrivez à <a href="mailto:827868421@qq.com">827868421@qq.com</a>. Indiquez si possible votre version de macOS et joignez une image d’exemple.</p>
+<p class="page-link"><a href="privacy.html#fr">Politique de confidentialité</a></p>
+</section>
+
+<section class="locale" data-lang="de" lang="de">
+<div class="brand"><img src="icon.png" alt=""><h1>WebP Batch Converter</h1></div>
+<p class="meta">Support</p>
+<p class="lede"><strong>Einmal ein Rezept erstellen, einen ganzen Ordner umwandeln.</strong> Kombinieren Sie Schritte – Filtern, Skalieren, Stufenweise komprimieren, Wasserzeichen, Umbenennen – und wandeln Sie PNG- und JPEG-Bilder in einem Durchgang in WebP, PNG oder JPEG um. Alles geschieht lokal auf Ihrem Mac.</p>
+<h2>Erste Schritte</h2>
+<ol>
+<li>Ziehen Sie Bilder oder einen Ordner ins Fenster. Die Tabelle zeigt jede Datei vorher und nachher.</li>
+<li>Klicken Sie unten links auf „Schritt hinzufügen“, um Ihr Rezept zusammenzustellen. Die Schritte laufen von oben nach unten; ziehen Sie einen Titel, um die Reihenfolge zu ändern.</li>
+<li>Prüfen Sie die Vorschau und klicken Sie auf „Ausführen“ (⌘R).</li>
+</ol>
+<h2>Häufige Fragen</h2>
+<div class="detail"><h3>Wo werden die umgewandelten Dateien gespeichert?</h3><p>Standardmäßig neben den Originalen. Im Schritt „Ausgabe“ können Sie einen Unterordner neben den Originalen oder einen beliebigen Ordner wählen und festlegen, was bei einer gleichnamigen Datei passiert.</p></div>
+<div class="detail"><h3>Warum fragt die App nach Zugriff auf einen Ordner?</h3><p>Die Sandbox von macOS erlaubt einer App nur dort zu schreiben, wo Sie es zulassen. Wenn Sie einzelne Bilder statt eines Ordners hinzufügen, fragt die App einmalig nach Zugriff auf den Ordner, in dem sie liegen. Sie können stattdessen auch in einen Ordner Ihrer Wahl speichern.</p></div>
+<div class="detail"><h3>Wie funktioniert „Stufenweise komprimieren“?</h3><p>Kleine Dateien behalten ihre Größe, schmale Bilder versuchen zuerst eine höhere Qualität, und alle anderen werden schrittweise über eine Breitenliste verkleinert, bis die fertige Datei – inklusive Wasserzeichen – unter Ihrem Limit liegt.</p></div>
+<div class="detail"><h3>Wie verschiebe ich ein Wasserzeichen?</h3><p>Wählen Sie im Schritt „Wasserzeichen“ eine der neun Positionen oder ziehen Sie das Wasserzeichen direkt in der Vorschau. Der Abstand zu den Rändern bleibt proportional, sodass es auf Bildern jeder Größe an derselben Stelle sitzt.</p></div>
+<div class="detail"><h3>Was bewirkt „Originale nach Erfolg löschen“?</h3><p>Nach einer erfolgreichen Umwandlung wird das Original in den Papierkorb gelegt, nicht endgültig gelöscht – Sie können es also wiederherstellen.</p></div>
+<div class="detail"><h3>Wie ändere ich die Sprache der App?</h3><p>Die App folgt der Sprache Ihres Mac. Um nur für diese App eine andere Sprache zu verwenden, wählen Sie Einstellungen … (⌘,) › Sprache und starten die App neu.</p></div>
+<div class="detail"><h3>Test und Kauf</h3><p>Alle Funktionen sind 7 Tage kostenlos testbar. Danach funktionieren Bilder hinzufügen, Schritte bearbeiten und die Vorschau weiterhin; „Ausführen“ erfordert den einmaligen Kauf „Dauerhaft freischalten“. Käufe werden von Apple abgewickelt. Auf einem neuen Mac oder nach einer Neuinstallation wählen Sie „Käufe wiederherstellen“ unter Test &amp; Kauf … oder in den Einstellungen.</p></div>
+<h2>Kontakt</h2>
+<p>Schreiben Sie an <a href="mailto:827868421@qq.com">827868421@qq.com</a>. Geben Sie bitte Ihre macOS-Version an und fügen Sie nach Möglichkeit ein Beispielbild bei.</p>
+<p class="page-link"><a href="privacy.html#de">Datenschutzerklärung</a></p>
+</section>
+
+<section class="locale" data-lang="es" lang="es">
+<div class="brand"><img src="icon.png" alt=""><h1>WebP Batch Converter</h1></div>
+<p class="meta">Soporte</p>
+<p class="lede"><strong>Crea una receta una vez y convierte una carpeta entera.</strong> Combina pasos —Filtrar, Redimensionar, Compresión por pasos, Marca de agua, Renombrar— y convierte imágenes PNG y JPEG a WebP, PNG o JPEG de una sola vez. Todo ocurre en tu Mac.</p>
+<h2>Primeros pasos</h2>
+<ol>
+<li>Arrastra imágenes o una carpeta a la ventana. La tabla muestra cada archivo antes y después.</li>
+<li>Haz clic en «Añadir paso» abajo a la izquierda para crear tu receta. Los pasos se ejecutan de arriba abajo; arrastra un título para cambiar el orden.</li>
+<li>Revisa la vista previa y haz clic en «Ejecutar» (⌘R).</li>
+</ol>
+<h2>Preguntas frecuentes</h2>
+<div class="detail"><h3>¿Dónde se guardan los archivos convertidos?</h3><p>Por omisión, junto a los originales. En el paso «Salida» puedes elegir una subcarpeta junto a los originales o cualquier carpeta, y qué hacer si ya existe un archivo con el mismo nombre.</p></div>
+<div class="detail"><h3>¿Por qué la app pide autorizar una carpeta?</h3><p>El aislamiento de macOS solo deja que una app escriba donde tú lo permitas. Si añades imágenes sueltas en lugar de una carpeta, la app pide una vez permiso para guardar en la carpeta que las contiene. También puedes guardar en una carpeta que elijas.</p></div>
+<div class="detail"><h3>¿Cómo funciona la «Compresión por pasos»?</h3><p>Los archivos pequeños mantienen su tamaño, las imágenes estrechas prueban primero una calidad más alta y el resto baja por una lista de anchos hasta que el archivo final —con la marca de agua incluida— queda por debajo de tu límite.</p></div>
+<div class="detail"><h3>¿Cómo muevo una marca de agua?</h3><p>Elige una de las nueve posiciones en el paso «Marca de agua» o arrastra la marca directamente en la vista previa. Su distancia a los bordes se mantiene proporcional, así que queda en el mismo sitio en imágenes de cualquier tamaño.</p></div>
+<div class="detail"><h3>¿Qué hace «Eliminar originales tras completar»?</h3><p>Cuando un archivo se convierte correctamente, su original va a la papelera en lugar de borrarse, así que aún puedes recuperarlo.</p></div>
+<div class="detail"><h3>¿Cómo cambio el idioma de la app?</h3><p>La app sigue el idioma de tu Mac. Para usar otro solo en esta app, elige Ajustes… (⌘,) › Idioma y reinicia la app.</p></div>
+<div class="detail"><h3>Prueba y compra</h3><p>Puedes probar todas las funciones gratis durante 7 días. Después, añadir imágenes, editar pasos y la vista previa siguen funcionando; «Ejecutar» requiere la compra única «Desbloqueo permanente». Apple gestiona las compras. En un Mac nuevo o tras reinstalar, elige «Restaurar compras» en Prueba y compra… o en Ajustes.</p></div>
+<h2>Contacto</h2>
+<p>Escribe a <a href="mailto:827868421@qq.com">827868421@qq.com</a>. Indica tu versión de macOS y, si puedes, adjunta una imagen de ejemplo.</p>
+<p class="page-link"><a href="privacy.html#es">Política de privacidad</a></p>
+</section>
+
+<section class="locale" data-lang="ru" lang="ru">
+<div class="brand"><img src="icon.png" alt=""><h1>WebP Batch Converter</h1></div>
+<p class="meta">Поддержка</p>
+<p class="lede"><strong>Настройте рецепт один раз — обработайте всю папку.</strong> Соберите шаги — «Фильтр», «Размер», «Пошаговое сжатие», «Водяной знак», «Переименование» — и за один запуск преобразуйте изображения PNG и JPEG в WebP, PNG или JPEG. Всё происходит локально на вашем Mac.</p>
+<h2>Начало работы</h2>
+<ol>
+<li>Перетащите изображения или папку в окно. В таблице видно каждый файл до и после.</li>
+<li>Нажмите «Добавить шаг» внизу слева, чтобы собрать рецепт. Шаги выполняются сверху вниз; перетащите заголовок шага, чтобы изменить порядок.</li>
+<li>Проверьте предпросмотр и нажмите «Запустить» (⌘R).</li>
+</ol>
+<h2>Вопросы и ответы</h2>
+<div class="detail"><h3>Где сохраняются преобразованные файлы?</h3><p>По умолчанию — рядом с оригиналами. В шаге «Вывод» можно выбрать подпапку рядом с оригиналами или любую папку, а также что делать, если файл с таким именем уже есть.</p></div>
+<div class="detail"><h3>Почему приложение просит доступ к папке?</h3><p>Песочница macOS разрешает приложению записывать только туда, куда вы позволили. Если вы добавляете отдельные изображения, а не папку, приложение один раз попросит доступ к папке, где они лежат. Можно также сохранять в выбранную вами папку.</p></div>
+<div class="detail"><h3>Как работает «Пошаговое сжатие»?</h3><p>Маленькие файлы сохраняют размер, узкие изображения сначала пробуют более высокое качество, а остальные поэтапно уменьшаются по списку ширин, пока итоговый файл — вместе с водяным знаком — не уложится в заданный лимит.</p></div>
+<div class="detail"><h3>Как переместить водяной знак?</h3><p>Выберите одну из девяти позиций в шаге «Водяной знак» или перетащите знак прямо в предпросмотре. Расстояние до краёв сохраняется пропорционально, поэтому на изображениях любого размера знак окажется в том же месте.</p></div>
+<div class="detail"><h3>Что делает «Удалять оригиналы после успеха»?</h3><p>После успешного преобразования оригинал перемещается в Корзину, а не стирается, так что его можно вернуть.</p></div>
+<div class="detail"><h3>Как сменить язык приложения?</h3><p>Приложение использует язык вашего Mac. Чтобы выбрать другой язык только для него, откройте «Настройки…» (⌘,) › «Язык» и перезапустите приложение.</p></div>
+<div class="detail"><h3>Пробный период и покупка</h3><p>Все функции можно бесплатно попробовать в течение 7 дней. После этого добавление изображений, редактирование шагов и предпросмотр продолжают работать, а для «Запустить» нужна разовая покупка «Бессрочная разблокировка». Покупки обрабатывает Apple. На новом Mac или после переустановки выберите «Восстановить покупки» в окне «Пробный период и покупка…» или в настройках.</p></div>
+<h2>Связаться с нами</h2>
+<p>Пишите на <a href="mailto:827868421@qq.com">827868421@qq.com</a>. Укажите, пожалуйста, версию macOS и по возможности приложите пример изображения.</p>
+<p class="page-link"><a href="privacy.html#ru">Политика конфиденциальности</a></p>
+</section>
+
+<section class="locale" data-lang="it" lang="it">
+<div class="brand"><img src="icon.png" alt=""><h1>WebP Batch Converter</h1></div>
+<p class="meta">Assistenza</p>
+<p class="lede"><strong>Crea una ricetta una volta, converti un’intera cartella.</strong> Combina passaggi — Filtra, Ridimensiona, Compressione a gradini, Filigrana, Rinomina — e converti immagini PNG e JPEG in WebP, PNG o JPEG in un’unica esecuzione. Tutto avviene sul tuo Mac.</p>
+<h2>Per iniziare</h2>
+<ol>
+<li>Trascina immagini o una cartella nella finestra. La tabella mostra ogni file prima e dopo.</li>
+<li>Fai clic su «Aggiungi passaggio» in basso a sinistra per comporre la ricetta. I passaggi vengono eseguiti dall’alto in basso; trascina un titolo per riordinarli.</li>
+<li>Controlla l’anteprima, poi fai clic su «Esegui» (⌘R).</li>
+</ol>
+<h2>Domande frequenti</h2>
+<div class="detail"><h3>Dove vengono salvati i file convertiti?</h3><p>Per impostazione predefinita accanto agli originali. Nel passaggio «Output» puoi scegliere una sottocartella accanto agli originali o una cartella qualsiasi, e cosa fare se esiste già un file con lo stesso nome.</p></div>
+<div class="detail"><h3>Perché l’app chiede di autorizzare una cartella?</h3><p>La sandbox di macOS consente a un’app di scrivere solo dove lo permetti tu. Se aggiungi singole immagini invece di una cartella, l’app chiede una sola volta il permesso di salvare nella cartella che le contiene. Puoi anche salvare in una cartella a tua scelta.</p></div>
+<div class="detail"><h3>Come funziona la «Compressione a gradini»?</h3><p>I file piccoli mantengono le dimensioni, le immagini strette provano prima una qualità più alta e tutte le altre scendono lungo un elenco di larghezze finché il file finale — filigrana inclusa — non rientra nel limite.</p></div>
+<div class="detail"><h3>Come sposto una filigrana?</h3><p>Scegli una delle nove posizioni nel passaggio «Filigrana» oppure trascina la filigrana direttamente nell’anteprima. La distanza dai bordi resta proporzionale, quindi finisce nello stesso punto su immagini di qualsiasi dimensione.</p></div>
+<div class="detail"><h3>Cosa fa «Elimina gli originali dopo il successo»?</h3><p>Dopo una conversione riuscita, l’originale viene spostato nel Cestino, non cancellato: puoi ancora recuperarlo.</p></div>
+<div class="detail"><h3>Come cambio la lingua dell’app?</h3><p>L’app segue la lingua del Mac. Per usarne un’altra solo in questa app, scegli Impostazioni… (⌘,) › Lingua, poi riavvia l’app.</p></div>
+<div class="detail"><h3>Prova e acquisto</h3><p>Tutte le funzioni sono gratuite per 7 giorni. Dopo la prova, aggiungere immagini, modificare i passaggi e l’anteprima continuano a funzionare; «Esegui» richiede l’acquisto unico «Sblocco permanente». Gli acquisti sono gestiti da Apple. Su un nuovo Mac o dopo una reinstallazione, scegli «Ripristina acquisti» in Prova e acquisto… o nelle Impostazioni.</p></div>
+<h2>Contatti</h2>
+<p>Scrivi a <a href="mailto:827868421@qq.com">827868421@qq.com</a>. Indica la versione di macOS e, se possibile, allega un’immagine di esempio.</p>
+<p class="page-link"><a href="privacy.html#it">Informativa sulla privacy</a></p>
+</section>
 <footer>© 2026 LIN CHEN</footer>
 </div>
 <script src="language.js"></script>
